@@ -23,7 +23,10 @@ class SignUpScreen extends StatelessWidget {
               padding: kDefaultPadding,
               child: Text(
                 'Create Account',
-                style: titleText,
+                style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: "Poppins"),
               ),
             ),
             SizedBox(
@@ -35,7 +38,7 @@ class SignUpScreen extends StatelessWidget {
                 children: [
                   Text(
                     'Already a member?',
-                    style: subTitle,
+                    style: TextStyle(fontFamily: "", fontSize: 18),
                   ),
                   SizedBox(
                     width: 5,
@@ -87,9 +90,9 @@ class SignUpScreen extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                      MaterialPageRoute(builder: (context) => Default()));
                 },
-                child: PrimaryButton(buttonText: 'Sign Up'),
+                child: PrimaryButton(buttonText: 'Sign up'),
               ),
             ),
             SizedBox(

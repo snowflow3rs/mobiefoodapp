@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/default_layout_page.dart';
-import 'package:flutter_project/onboarding_screen.dart';
+
+import 'package:flutter_project/screens/onboarding_screen.dart';
 import 'package:flutter_project/login_screens/login_page.dart';
 
 void main() {

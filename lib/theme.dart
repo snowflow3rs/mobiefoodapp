@@ -9,6 +9,8 @@ const kBlackColor = Color(0xFF272726);
 const kTextFieldColor = Color(0xFF979797);
 
 const kDefaultPadding = EdgeInsets.symmetric(horizontal: 30);
+const bg1 = Color(0xFFFA4A0C);
+const trans = Color(0xFFFFA500);
 
 class RiveAppTheme {
   static const Color accentColor = Color(0xFF5E9EFF);
@@ -24,7 +26,7 @@ TextStyle titleText =
 TextStyle subTitle = TextStyle(
     color: kSecondaryColor, fontSize: 18, fontWeight: FontWeight.w500);
 TextStyle textButton = TextStyle(
-  color: kPrimaryColor,
-  fontSize: 18,
-  fontWeight: FontWeight.w700,
-);
+    color: Colors.orange,
+    fontSize: 18,
+    fontFamily: "Poppins",
+    fontWeight: FontWeight.w700);

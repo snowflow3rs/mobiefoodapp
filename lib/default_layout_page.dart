@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/home_page.dart';
+import 'package:flutter_project/screens/home_page.dart';
 import 'package:flutter_project/navigation/custom_nav.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_project/navigation/side_menu.dart';
-import 'package:rive/rive.dart';
+import 'package:flutter_project/screens/user_page.dart';
+import 'package:rive/rive.dart' hide LinearGradient;
 import 'package:flutter/physics.dart';
 import 'dart:math' as math;
 import 'package:flutter/services.dart';
@@ -21,14 +22,14 @@ Widget commonTabScene(String tabName) {
           )));
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class Default extends StatefulWidget {
+  const Default({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Default> createState() => _DefaultState();
 }
 
-class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
+class _DefaultState extends State<Default> with TickerProviderStateMixin {
   late AnimationController? _animationController;
   late AnimationController? _onBoardingAnimController;
   late Animation<double> _onBoardingAnim;
@@ -98,7 +99,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         children: [
           Positioned(
               child: Container(
-            color: RiveAppTheme.background2,
+            color: bg1,
           )),
           RepaintBoundary(
             child: AnimatedBuilder(
@@ -115,7 +116,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   );
                 },
                 child: FadeTransition(
-                    opacity: _sidebarAnim, child: const SideMenu())),
+                    opacity: _sidebarAnim,
+                    child: SideMenu(
+                      onTabChange: (tabIndex) {
+                        setState(() {
+                          _tabBody = _screens[tabIndex];
+                        });
+                      },
+                    ))),
           ),
           RepaintBoundary(
             child: AnimatedBuilder(
@@ -173,7 +181,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ),
                   ),
                 )),
-          )
+          ),
         ],
       ),
       bottomNavigationBar: RepaintBoundary(

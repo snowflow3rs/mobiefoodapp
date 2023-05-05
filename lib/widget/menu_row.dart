@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_project/theme.dart';
 import 'package:rive/rive.dart';
 import 'package:flutter_project/model/menu_items.dart';
 import 'package:flutter_project/assets.dart' as app_assets;
@@ -44,7 +45,7 @@ class MenuRow extends StatelessWidget {
           height: 56,
           curve: const Cubic(0.2, 0.8, 0.2, 1),
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: Colors.white.withOpacity(0.2),
             borderRadius: BorderRadius.circular(10),
           ),
         ),

@@ -46,9 +46,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     child: Text(
                       'Skip',
                       style: TextStyle(
+                          fontFamily: "Poppins",
                           fontWeight: FontWeight.w500,
-                          fontSize: 14,
-                          color: Color(0xFF6C63FF)),
+                          fontSize: 16,
+                          color: Colors.orange),
                     )),
 
                 //dot indicators
@@ -63,13 +64,18 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             return LogInScreen();
                           }));
                         },
-                        child: Text(
-                          'Done',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                              color: Color(0xFF6C63FF)),
+                        child: Icon(
+                          Icons.arrow_forward,
+                          color: Colors.orange,
+                          size: 30,
                         ),
+                        // Text(
+                        //   'Done',
+                        //   style: TextStyle(
+                        //       fontWeight: FontWeight.w500,
+                        //       fontSize: 14,
+                        //       color: Color(0xFF6C63FF)),
+                        // ),
                       )
                     : GestureDetector(
                         onTap: () {
@@ -79,7 +85,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         },
                         child: Icon(
                           Icons.arrow_forward,
-                          color: Colors.black12,
+                          color: Colors.orange,
+                          size: 30,
                         ),
                       ),
               ],

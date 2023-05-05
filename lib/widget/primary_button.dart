@@ -11,7 +11,7 @@ class PrimaryButton extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.08,
       width: double.infinity,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16), color: kPrimaryColor),
+          borderRadius: BorderRadius.circular(16), color: Colors.orange),
       child: Text(
         buttonText,
         style: textButton.copyWith(color: kWhiteColor),

@@ -8,7 +8,9 @@ import 'package:flutter_project/model/menu_items.dart';
 import 'package:rive/rive.dart';
 
 class SideMenu extends StatefulWidget {
-  const SideMenu({super.key});
+  const SideMenu({Key? key, required this.onTabChange}) : super(key: key);
+
+  final Function(int tabIndex) onTabChange;
 
   @override
   State<SideMenu> createState() => _SideMenuState();
@@ -20,6 +22,16 @@ class _SideMenuState extends State<SideMenu> {
   final List<MenuItemModel> _themeMenuIcon = MenuItemModel.menuItems3;
   String _selectedMenu = MenuItemModel.menuItems[0].title;
   bool _isDarkMode = false;
+  int _selectedTab = 0;
+  void onTabPress(int index) {
+    if (_selectedTab != index) {
+      setState(() {
+        _selectedTab = index;
+      });
+      widget.onTabChange(index);
+    }
+  }
+
   void onMenuPress(MenuItemModel menu) {
     setState(() {
       _selectedMenu = menu.title;
@@ -47,7 +59,7 @@ class _SideMenuState extends State<SideMenu> {
       padding: EdgeInsets.only(top: 40, bottom: 40),
       constraints: const BoxConstraints(maxWidth: 288),
       decoration: BoxDecoration(
-        color: RiveAppTheme.background2,
+        color: bg1,
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(30),
           bottomRight: Radius.circular(30),
@@ -73,7 +85,7 @@ class _SideMenuState extends State<SideMenu> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Person",
+                      "John Wick",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -83,7 +95,7 @@ class _SideMenuState extends State<SideMenu> {
                       height: 2,
                     ),
                     Text(
-                      "Software Engineer",
+                      "Street 1",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,
@@ -106,40 +118,77 @@ class _SideMenuState extends State<SideMenu> {
             selectedMenu: _selectedMenu,
             onMenuPress: onMenuPress,
           ),
-          const Spacer(),
+          // const Spacer(),
+          // Padding(
+          //   padding: const EdgeInsets.all(20),
+          //   child: Row(
+          //     children: [
+          //       SizedBox(
+          //           width: 32,
+          //           height: 32,
+          //           child: Opacity(
+          //             opacity: 0.6,
+          //             child: RiveAnimation.asset(
+          //               "assets/RiverAssets/icons.riv",
+          //               stateMachines: [
+          //                 _themeMenuIcon[0].riveIcon.stateMachine
+          //               ],
+          //               artboard: _themeMenuIcon[0].riveIcon.artboard,
+          //               onInit: onThemeRiveIconInit,
+          //             ),
+          //           )),
+          //       const SizedBox(
+          //         width: 14,
+          //       ),
+          //       Expanded(
+          //         child: Text(
+          //           _themeMenuIcon[0].title,
+          //           style: const TextStyle(
+          //               color: Colors.white,
+          //               fontSize: 17,
+          //               fontFamily: "Inter",
+          //               fontWeight: FontWeight.w600),
+          //         ),
+          //       ),
+          //       CupertinoSwitch(value: _isDarkMode, onChanged: onThemeToggle),
+          //     ],
+          //   ),
+          // ),
           Padding(
-            padding: const EdgeInsets.all(20),
-            child: Row(
-              children: [
-                SizedBox(
-                    width: 32,
-                    height: 32,
-                    child: Opacity(
-                      opacity: 0.6,
-                      child: RiveAnimation.asset(
-                        "assets/RiverAssets/icons.riv",
-                        stateMachines: [
-                          _themeMenuIcon[0].riveIcon.stateMachine
-                        ],
-                        artboard: _themeMenuIcon[0].riveIcon.artboard,
-                        onInit: onThemeRiveIconInit,
-                      ),
-                    )),
-                const SizedBox(
-                  width: 14,
-                ),
-                Expanded(
-                  child: Text(
-                    _themeMenuIcon[0].title,
-                    style: const TextStyle(
+            padding: const EdgeInsets.fromLTRB(24, 30, 16, 16),
+            child: InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.logout,
+                    color: Colors.white,
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    "Sign-out",
+                    style: TextStyle(
                         color: Colors.white,
                         fontSize: 17,
-                        fontFamily: "Inter",
-                        fontWeight: FontWeight.w600),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Poppins"),
                   ),
-                ),
-                CupertinoSwitch(value: _isDarkMode, onChanged: onThemeToggle),
-              ],
+                  // const Spacer(),
+                  // InkWell(
+                  //   onTap: () {
+                  //     Navigator.pop(context);
+                  //   },
+                  //   child: Icon(
+                  //     Icons.arrow_forward,
+                  //     color: Colors.white,
+                  //   ),
+                  // ),
+                ],
+              ),
             ),
           )
         ],
@@ -170,7 +219,7 @@ class MenuButtonSection extends StatelessWidget {
           padding:
               const EdgeInsets.only(left: 24, right: 24, top: 40, bottom: 8),
           child: Text(
-            "BROWSER",
+            title,
             style: TextStyle(
                 color: Colors.white.withOpacity(0.7),
                 fontSize: 15,
@@ -183,7 +232,7 @@ class MenuButtonSection extends StatelessWidget {
           child: Column(children: [
             for (var menu in menuIcons) ...[
               Divider(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withOpacity(0.3),
                   thickness: 1,
                   height: 1,
                   indent: 16,

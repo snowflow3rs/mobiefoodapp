@@ -48,7 +48,10 @@ class _LogInScreenState extends State<LogInScreen> {
               ),
               Text(
                 'Welcome Back',
-                style: titleText,
+                style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: "Poppins"),
               ),
               SizedBox(
                 height: 5,
@@ -57,7 +60,7 @@ class _LogInScreenState extends State<LogInScreen> {
                 children: [
                   Text(
                     'New to this app?',
-                    style: subTitle,
+                    style: TextStyle(fontSize: 18, fontFamily: ""),
                   ),
                   SizedBox(
                     width: 5,
@@ -74,6 +77,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     child: Text(
                       'Sign up',
                       style: textButton.copyWith(
+                        fontFamily: "Poppins",
                         decoration: TextDecoration.underline,
                         decorationThickness: 1,
                       ),
@@ -255,7 +259,7 @@ class _LogInScreenState extends State<LogInScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePage()));
+                                    builder: (context) => Default()));
                           });
                         });
                       } else {
@@ -269,7 +273,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFF77D8E),
+                    backgroundColor: Colors.orange,
                     minimumSize: const Size(double.infinity, 56),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
@@ -280,11 +284,8 @@ class _LogInScreenState extends State<LogInScreen> {
                       ),
                     ),
                   ),
-                  icon: const Icon(
-                    CupertinoIcons.arrow_right,
-                    color: Color(0xFFFE0037),
-                  ),
-                  label: const Text("Sign In"),
+                  icon: const Icon(CupertinoIcons.arrow_right, color: bg1),
+                  label: const Text("Sign in"),
                 ),
               ),
               SizedBox(
@@ -292,7 +293,8 @@ class _LogInScreenState extends State<LogInScreen> {
               ),
               Text(
                 'Or log in with:',
-                style: subTitle.copyWith(color: kBlackColor),
+                style: subTitle.copyWith(
+                    color: kBlackColor, fontFamily: "Poppins"),
               ),
               SizedBox(
                 height: 20,
