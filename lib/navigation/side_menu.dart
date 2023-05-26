@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_project/login_screens/login_page.dart';
 import 'package:flutter_project/theme.dart';
 import 'package:flutter_project/widget/menu_row.dart';
 import 'package:flutter_project/model/menu_items.dart';
@@ -85,7 +86,7 @@ class _SideMenuState extends State<SideMenu> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "John Wick",
+                      "Saint Laurist",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -95,7 +96,7 @@ class _SideMenuState extends State<SideMenu> {
                       height: 2,
                     ),
                     Text(
-                      "Street 1",
+                      "123 Main Street",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,
@@ -118,47 +119,16 @@ class _SideMenuState extends State<SideMenu> {
             selectedMenu: _selectedMenu,
             onMenuPress: onMenuPress,
           ),
-          // const Spacer(),
-          // Padding(
-          //   padding: const EdgeInsets.all(20),
-          //   child: Row(
-          //     children: [
-          //       SizedBox(
-          //           width: 32,
-          //           height: 32,
-          //           child: Opacity(
-          //             opacity: 0.6,
-          //             child: RiveAnimation.asset(
-          //               "assets/RiverAssets/icons.riv",
-          //               stateMachines: [
-          //                 _themeMenuIcon[0].riveIcon.stateMachine
-          //               ],
-          //               artboard: _themeMenuIcon[0].riveIcon.artboard,
-          //               onInit: onThemeRiveIconInit,
-          //             ),
-          //           )),
-          //       const SizedBox(
-          //         width: 14,
-          //       ),
-          //       Expanded(
-          //         child: Text(
-          //           _themeMenuIcon[0].title,
-          //           style: const TextStyle(
-          //               color: Colors.white,
-          //               fontSize: 17,
-          //               fontFamily: "Inter",
-          //               fontWeight: FontWeight.w600),
-          //         ),
-          //       ),
-          //       CupertinoSwitch(value: _isDarkMode, onChanged: onThemeToggle),
-          //     ],
-          //   ),
-          // ),
           Padding(
             padding: const EdgeInsets.fromLTRB(24, 30, 16, 16),
             child: InkWell(
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LogInScreen(),
+                  ),
+                );
               },
               child: Row(
                 children: [
@@ -177,16 +147,6 @@ class _SideMenuState extends State<SideMenu> {
                         fontWeight: FontWeight.bold,
                         fontFamily: "Poppins"),
                   ),
-                  // const Spacer(),
-                  // InkWell(
-                  //   onTap: () {
-                  //     Navigator.pop(context);
-                  //   },
-                  //   child: Icon(
-                  //     Icons.arrow_forward,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
                 ],
               ),
             ),

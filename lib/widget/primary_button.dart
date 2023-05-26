@@ -14,7 +14,7 @@ class PrimaryButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(16), color: Colors.orange),
       child: Text(
         buttonText,
-        style: textButton.copyWith(color: kWhiteColor),
+        style: textButton.copyWith(color: Color(0xFFFFFFFF)),
       ),
     );
   }

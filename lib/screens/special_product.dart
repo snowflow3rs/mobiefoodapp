@@ -41,7 +41,7 @@ class SpecialOffers extends StatelessWidget {
                 numOfBrands: 12,
                 press: () {},
               ),
-              SizedBox(width: 100),
+              SizedBox(width: 20),
             ],
           ),
         ),
@@ -66,7 +66,7 @@ class SpecialOfferCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 20),
+      padding: EdgeInsets.only(left: 12),
       child: GestureDetector(
         onTap: press,
         child: SizedBox(
@@ -106,7 +106,7 @@ class SpecialOfferCard extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "Poppins"),
+                              fontFamily: "Gordita"),
                         ),
                         TextSpan(text: "$numOfBrands Brands")
                       ],

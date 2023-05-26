@@ -27,7 +27,7 @@ class _CheckBoxState extends State<CheckBox> {
                 height: 20,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    border: Border.all(color: kDarkGreyColor)),
+                    border: Border.all(color: Color(0xFFA8A8A8))),
                 child: _isSelected
                     ? Icon(
                         Icons.check,
@@ -40,7 +40,10 @@ class _CheckBoxState extends State<CheckBox> {
             SizedBox(
               width: 12,
             ),
-            Text(widget.text),
+            Text(
+              widget.text,
+              style: TextStyle(color: Colors.black),
+            ),
           ],
         )
       ],

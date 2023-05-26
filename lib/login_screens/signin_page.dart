@@ -24,6 +24,7 @@ class SignUpScreen extends StatelessWidget {
               child: Text(
                 'Create Account',
                 style: TextStyle(
+                    color: Colors.black,
                     fontSize: 32,
                     fontWeight: FontWeight.w700,
                     fontFamily: "Poppins"),
@@ -38,7 +39,10 @@ class SignUpScreen extends StatelessWidget {
                 children: [
                   Text(
                     'Already a member?',
-                    style: TextStyle(fontFamily: "", fontSize: 18),
+                    style: TextStyle(
+                        fontFamily: "Poppins",
+                        fontSize: 18,
+                        color: Colors.black54),
                   ),
                   SizedBox(
                     width: 5,
@@ -102,7 +106,7 @@ class SignUpScreen extends StatelessWidget {
               padding: kDefaultPadding,
               child: Text(
                 'Or log in with:',
-                style: subTitle.copyWith(color: kBlackColor),
+                style: subTitle.copyWith(color: Color(0xFF272726)),
               ),
             ),
             SizedBox(

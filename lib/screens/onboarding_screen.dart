@@ -9,7 +9,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
-
+  static String routeName = "/slash";
   @override
   State<OnBoardingScreen> createState() => _OnBoardingScreenState();
 }

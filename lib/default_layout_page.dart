@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/screens/Favourite/favourite_page.dart';
 import 'package:flutter_project/screens/home_page.dart';
 import 'package:flutter_project/navigation/custom_nav.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_project/navigation/side_menu.dart';
-import 'package:flutter_project/screens/user_page.dart';
+import 'package:flutter_project/screens/profile/profile_page.dart';
+import 'package:flutter_project/screens/timer/timer_screen.dart';
 import 'package:rive/rive.dart' hide LinearGradient;
 import 'package:flutter/physics.dart';
 import 'dart:math' as math;
 import 'package:flutter/services.dart';
-
 import 'package:flutter_project/theme.dart';
+import 'package:flutter_project/screens/notificate/notification_page.dart';
 
 Widget commonTabScene(String tabName) {
   return Container(
@@ -38,10 +40,10 @@ class _DefaultState extends State<Default> with TickerProviderStateMixin {
   Widget _tabBody = Container(color: RiveAppTheme.background);
   final List<Widget> _screens = [
     const MainPage(),
-    commonTabScene("Search"),
-    commonTabScene("Timer"),
-    commonTabScene("Bell"),
-    commonTabScene("User"),
+    const FavouritePage(),
+    TimeScreen(),
+    NotificationPage(),
+    ProfileScreen(),
   ];
 
   final springDesc = const SpringDescription(

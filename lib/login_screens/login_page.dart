@@ -49,6 +49,7 @@ class _LogInScreenState extends State<LogInScreen> {
               Text(
                 'Welcome Back',
                 style: TextStyle(
+                    color: Colors.black,
                     fontSize: 32,
                     fontWeight: FontWeight.w700,
                     fontFamily: "Poppins"),
@@ -60,7 +61,10 @@ class _LogInScreenState extends State<LogInScreen> {
                 children: [
                   Text(
                     'New to this app?',
-                    style: TextStyle(fontSize: 18, fontFamily: ""),
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: "Poppins",
+                        color: Colors.black54),
                   ),
                   SizedBox(
                     width: 5,
@@ -108,10 +112,11 @@ class _LogInScreenState extends State<LogInScreen> {
                             decoration: InputDecoration(
                               labelText: "Email",
                               labelStyle: TextStyle(
-                                color: kTextFieldColor,
+                                color: Color(0xFF979797),
                               ),
                               focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(color: kPrimaryColor),
+                                borderSide:
+                                    BorderSide(color: Color(0xFF1B383A)),
                               ),
                             ),
                           ),
@@ -130,10 +135,11 @@ class _LogInScreenState extends State<LogInScreen> {
                             decoration: InputDecoration(
                                 labelText: "Passwords",
                                 labelStyle: TextStyle(
-                                  color: kTextFieldColor,
+                                  color: Color(0xFF979797),
                                 ),
                                 focusedBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(color: kPrimaryColor),
+                                  borderSide:
+                                      BorderSide(color: Color(0xFF1B383A)),
                                 ),
                                 suffixIcon: pass
                                     ? IconButton(
@@ -145,11 +151,11 @@ class _LogInScreenState extends State<LogInScreen> {
                                         icon: _isObscure
                                             ? Icon(
                                                 Icons.visibility_off,
-                                                color: kTextFieldColor,
+                                                color: Color(0xFF979797),
                                               )
                                             : Icon(
                                                 Icons.visibility,
-                                                color: kPrimaryColor,
+                                                color: Color(0xFF1B383A),
                                               ),
                                       )
                                     : null),
@@ -217,7 +223,7 @@ class _LogInScreenState extends State<LogInScreen> {
                 child: Text(
                   'Forgot password?',
                   style: TextStyle(
-                    color: kZambeziColor,
+                    color: Color(0xFF5B5B5B),
                     fontSize: 14,
                     decoration: TextDecoration.underline,
                     decorationThickness: 1,
@@ -294,7 +300,7 @@ class _LogInScreenState extends State<LogInScreen> {
               Text(
                 'Or log in with:',
                 style: subTitle.copyWith(
-                    color: kBlackColor, fontFamily: "Poppins"),
+                    color: Color(0xFF272726), fontFamily: "Poppins"),
               ),
               SizedBox(
                 height: 20,

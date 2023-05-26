@@ -47,7 +47,10 @@ class BuildButton extends StatelessWidget {
           SizedBox(
             width: 5,
           ),
-          Text(textButton),
+          Text(
+            textButton,
+            style: TextStyle(color: Colors.black),
+          ),
         ],
       ),
     );

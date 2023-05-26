@@ -59,7 +59,7 @@ class CategoryCard extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               title,
-              style: TextStyle(fontFamily: "Poppins", color: Colors.black54),
+              style: TextStyle(fontFamily: "Gordita", color: Colors.black),
             )
           ],
         ),
