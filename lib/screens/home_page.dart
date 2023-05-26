@@ -33,7 +33,8 @@ class _MainPageState extends State<MainPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(
-                "assets/images/Location.svg",
+                "assets/images/locate.svg",
+                width: 15,
               ),
               const SizedBox(width: 16 / 2),
               Text(

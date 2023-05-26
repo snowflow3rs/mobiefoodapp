@@ -30,6 +30,10 @@ class CartController extends GetxController {
     }
   }
 
+  void clearCart() {
+    _products.clear();
+  }
+
   void removeFromCart(Product product) {
     if (_products.containsKey(product)) {
       final int newQuantity = _products[product]! - 1;

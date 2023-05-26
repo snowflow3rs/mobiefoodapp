@@ -3,6 +3,7 @@ import 'package:flutter_project/provider/cart_provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_project/screens/default_btn.dart';
 import 'package:get/get.dart';
+import 'package:flutter_project/screens/payment/payment.dart';
 
 class CheckoutCard extends StatelessWidget {
   final CartController controller = Get.find();
@@ -79,7 +80,14 @@ class CheckoutCard extends StatelessWidget {
                     width: 190,
                     child: DefaultButton(
                       text: "Check Out",
-                      press: () {},
+                      press: () {
+                        controller.clearCart();
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PaymentPage()),
+                        );
+                      },
                     ),
                   ),
                 ],
