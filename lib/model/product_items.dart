@@ -43,7 +43,7 @@ List<Product> demoProducts = [
     title: "Combo Burgers",
     price: 64.99,
     description:
-        "A burger is a popular fast food item consisting of a cooked ground meat patty, typically beef, served in a sliced bun. It is a classic ... American food that has become a beloved staple around the world. Burgers are known for their delicious combination of flavors and textures, with juicy meat, melted cheese, and a variety of toppings such as lettuce, tomatoes, onions, pickles, and condiments like ketchup and mustard. They can be customized to suit individual preferences, and options like veggie burgers or chicken burgers are also available for those who prefer alternatives to beef. Whether enjoyed at a restaurant, food truck, or homemade, burgers are a satisfying and convenient choice for a tasty meal.",
+        "Bánh mì kẹp thịt là một món ăn nhanh phổ biến bao gồm một miếng thịt xay nấu chín, thường là thịt bò, được phục vụ trong một chiếc bánh mì cắt lát. Đó là một ... món ăn cổ điển của Mỹ đã trở thành món ăn chủ yếu được yêu thích trên khắp thế giới. Bánh mì kẹp thịt được biết đến với sự kết hợp thơm ngon giữa hương vị và kết cấu, với thịt ngon ngọt, phô mai tan chảy và nhiều loại đồ ăn kèm như rau diếp, cà chua, hành tây, dưa chua và các loại gia vị như sốt cà chua và mù tạt. Chúng có thể được tùy chỉnh để phù hợp với sở thích cá nhân và các tùy chọn như bánh mì kẹp thịt chay hoặc bánh mì kẹp thịt gà cũng có sẵn cho những người thích các lựa chọn thay thế cho thịt bò. Dù được thưởng thức tại nhà hàng, xe bán đồ ăn hay tự làm, bánh mì kẹp thịt đều là sự lựa chọn hài lòng và tiện lợi cho một bữa ăn ngon miệng.",
     rating: 4.8,
     isFavourite: true,
     isPopular: true,
@@ -64,7 +64,7 @@ List<Product> demoProducts = [
     title: "Vegetables Pizza",
     price: 50.5,
     description:
-        "Vegetable pizza is a delicious and nutritious variation of the classic pizza dish. It features a thin or thick crust topped with a variety of fresh and colorful vegetables. Common vegetable toppings include bell peppers, onions, mushrooms, tomatoes, spinach, olives, and sometimes even corn or broccoli. These vibrant toppings not only add a burst of flavors but also provide a range of vitamins, minerals, and dietary fiber. Vegetable pizza is a popular choice for those seeking a healthier option or for vegetarians and vegans looking for a meat-free alternative. It offers a satisfying combination of savory flavors and a lighter, more refreshing taste compared to other pizza varieties. Whether enjoyed at a pizzeria or made at home, vegetable pizza is a delightful choice for pizza lovers who enjoy the goodness of vegetables.",
+        "Pizza rau củ là một biến thể thơm ngon và bổ dưỡng của món pizza cổ điển. Nó có lớp vỏ mỏng hoặc dày bên trên là nhiều loại rau tươi và nhiều màu sắc. Các loại rau phổ biến bao gồm ớt chuông, hành tây, nấm, cà chua, rau bina, ô liu, và đôi khi cả ngô hoặc bông cải xanh. Những lớp phủ rực rỡ này không chỉ làm tăng thêm hương vị mà còn cung cấp nhiều loại vitamin, khoáng chất và chất xơ. Bánh pizza rau củ là một lựa chọn phổ biến cho những người đang tìm kiếm một lựa chọn lành mạnh hơn hoặc cho những người ăn chay và thuần chay đang tìm kiếm một lựa chọn thay thế không có thịt. Nó mang đến sự kết hợp hài lòng giữa hương vị thơm ngon và hương vị nhẹ nhàng, sảng khoái hơn so với các loại bánh pizza khác. Dù thưởng thức tại tiệm bánh pizza hay làm tại nhà, pizza rau củ là sự lựa chọn thú vị cho những tín đồ pizza thích vị ngon của rau củ.",
     rating: 4.1,
     isPopular: true,
   ),
@@ -84,7 +84,7 @@ List<Product> demoProducts = [
     title: "Orange Juices",
     price: 36.55,
     description:
-        "Orange juice is a refreshing and tangy beverage made from freshly squeezed oranges. It is a popular choice for breakfast or as a refreshing drink throughout the day. Orange juice is known for its vibrant orange color and sweet yet slightly acidic taste. It is rich in vitamin C, which is essential for boosting the immune system and promoting overall health. The natural sugars in orange juice provide a burst of energy, making it a great choice to start your day or rehydrate after physical activity. Whether enjoyed chilled or with ice, orange juice is a timeless classic that offers a delightful combination of citrusy flavors and a refreshing sensation. Raise a glass of orange juice and enjoy the invigorating taste of sunshine captured in a single sip.",
+        "Với một hương thơm tươi mát và màu sắc tươi sáng, nước cam ép là một thức uống tuyệt vời để làm mới và bổ sung năng lượng cho cơ thể. Khi bạn thưởng thức nước cam ép, bạn sẽ cảm nhận được vị chua ngọt tự nhiên của quả cam tươi, mang lại cảm giác tươi mới và sảng khoái. Nước cam ép không chỉ là một nguồn cung cấp vitamin C và chất chống oxy hóa, mà còn có lợi cho hệ tiêu hóa và hệ thống miễn dịch. Thưởng thức một ly nước cam ép tươi ngon, bạn sẽ cảm nhận được sự tươi mới và sự phục hồi cho cơ thể",
     rating: 4.1,
     isFavourite: true,
     isPopular: true,
@@ -105,7 +105,7 @@ List<Product> demoProducts = [
     title: "Cake",
     price: 26.55,
     description:
-        "Dessert cake is a delightful treat made with moist and fluffy layers, filled and topped with various flavors and frostings. It's a popular choice for celebrations and special occasions, offering a wide range of flavors and irresistible sweetness.",
+        "Bánh kem tráng miệng là một món ăn thú vị được làm bằng các lớp ẩm và mịn, được phủ đầy và phủ nhiều hương vị và phủ sương khác nhau. Đó là một lựa chọn phổ biến cho các lễ kỷ niệm và những dịp đặc biệt, mang đến nhiều hương vị và vị ngọt không thể cưỡng lại.",
     rating: 4.1,
     isFavourite: true,
     isPopular: true,

@@ -80,7 +80,7 @@ class IntroPage3 extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 1.15, 10),
                     child: Text(
-                      'Choose your food',
+                      'Chọn thức ăn của bạn',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -100,7 +100,7 @@ class IntroPage3 extends StatelessWidget {
                       maxWidth: 350,
                     ),
                     child: Text(
-                      'Easily find your type of food craving and you’ll get delivery in wide range.',
+                      'Dễ dàng tìm thấy loại đồ ăn mà bạn thèm ăn và bạn sẽ được giao hàng tận nơi trong phạm vi rộng.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Poppins",

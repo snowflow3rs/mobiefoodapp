@@ -12,8 +12,8 @@ class CartController extends GetxController {
       _products[product] = 1;
     }
     Get.snackbar(
-      'Product Added', // Title of the snackbar
-      'You have added the ${product.title} to the cart', // Message of the snackbar
+      'Sản phẩm đã được thêm vào giỏ hàng  ', // Title of the snackbar
+      'Bạn đã thêm ${product.title} vào giỏ hàng', // Message of the snackbar
       snackPosition: SnackPosition.TOP, // Position of the snackbar
       backgroundColor: Colors.grey[200], // Background color of the snackbar
       colorText: Colors.black, // Text color of the snackbar

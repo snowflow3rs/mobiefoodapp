@@ -83,7 +83,7 @@ class IntroPage2 extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 1.12, 13.54),
                     child: Text(
-                      'Free delivery offers',
+                      'Ưu đãi giao hàng ',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -103,7 +103,7 @@ class IntroPage2 extends StatelessWidget {
                       maxWidth: 348,
                     ),
                     child: Text(
-                      'Free delivery for new customers via Apple Pay and others payment methods.',
+                      'Giao hàng miễn phí cho khách hàng mới qua Apple Pay và các phương thức thanh toán khác.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         //'Poppins',

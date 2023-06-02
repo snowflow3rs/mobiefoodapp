@@ -44,7 +44,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       _controller.jumpToPage(2);
                     },
                     child: Text(
-                      'Skip',
+                      'Bỏ qua',
                       style: TextStyle(
                           fontFamily: "Poppins",
                           fontWeight: FontWeight.w500,

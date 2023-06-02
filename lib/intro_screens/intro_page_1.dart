@@ -84,7 +84,7 @@ class IntroPage1 extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 13),
                     child: Text(
-                      'All your favorites',
+                      'Đồ ăn yêu thích',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         // 'Poppins',
@@ -104,7 +104,7 @@ class IntroPage1 extends StatelessWidget {
                       maxWidth: 286,
                     ),
                     child: Text(
-                      'Order from the best local restaurants with easy, on-demand delivery.',
+                      'Đặt đồ ăn từ những nơi gần nhất, giao hàng theo yêu cầu',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         // 'Poppins',

@@ -51,7 +51,7 @@ class Body extends StatelessWidget {
                 child: Column(
                   children: [
                     DefaultButton(
-                      text: "Add To Cart",
+                      text: "THÊM VÀO GIỎ HÀNG",
                       press: () {
                         cartController.addToCart(product);
                       },

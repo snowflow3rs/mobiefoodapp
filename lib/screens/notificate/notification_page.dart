@@ -36,7 +36,7 @@ class NotificationPage extends StatelessWidget {
             ),
             const SizedBox(width: 16 / 2),
             Text(
-              "Notifications",
+              "Thông báo",
               style: TextStyle(color: Colors.black),
             ),
           ],

@@ -47,7 +47,7 @@ class _LogInScreenState extends State<LogInScreen> {
                 height: 120,
               ),
               Text(
-                'Welcome Back',
+                'Chào mừng bạn! ',
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 32,
@@ -60,7 +60,7 @@ class _LogInScreenState extends State<LogInScreen> {
               Row(
                 children: [
                   Text(
-                    'New to this app?',
+                    'Bạn là người mới  ?',
                     style: TextStyle(
                         fontSize: 18,
                         fontFamily: "Poppins",
@@ -79,7 +79,7 @@ class _LogInScreenState extends State<LogInScreen> {
                       );
                     },
                     child: Text(
-                      'Sign up',
+                      'Đăng ký',
                       style: textButton.copyWith(
                         fontFamily: "Poppins",
                         decoration: TextDecoration.underline,
@@ -221,7 +221,7 @@ class _LogInScreenState extends State<LogInScreen> {
                 //           builder: (context) => ResetPasswordScreen()));
                 // },
                 child: Text(
-                  'Forgot password?',
+                  'Quên mật khẩu?',
                   style: TextStyle(
                     color: Color(0xFF5B5B5B),
                     fontSize: 14,
@@ -291,7 +291,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     ),
                   ),
                   icon: const Icon(CupertinoIcons.arrow_right, color: bg1),
-                  label: const Text("Sign in"),
+                  label: const Text("ĐĂNG NHẬP"),
                 ),
               ),
               SizedBox(

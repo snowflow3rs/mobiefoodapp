@@ -64,7 +64,7 @@ class _PaymentPageState extends State<PaymentPage> {
         children: [
           Padding(
             padding: const EdgeInsets.all(24),
-            child: Text("Choose your payment method",
+            child: Text("Chọn phương thức thanh toán",
                 style: TextStyle(
                     color: Color(0xFF808080),
                     fontSize: 28,

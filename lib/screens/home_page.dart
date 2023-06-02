@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
               ),
               const SizedBox(width: 16 / 2),
               Text(
-                "Current location",
+                "Vị trí hiện tại của bạn",
                 style: TextStyle(
                     fontFamily: "Gordita", fontSize: 18, color: Colors.black),
               ),
@@ -78,7 +78,7 @@ class _MainPageState extends State<MainPage> {
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
-                "Explore",
+                "Khám phá ",
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
@@ -89,7 +89,7 @@ class _MainPageState extends State<MainPage> {
                 height: 5,
               ),
               const Text(
-                "what would you like to order",
+                "hôm nay bạn đang tìm kiếm món ăn gì ?",
                 style: TextStyle(
                   fontSize: 18,
                   fontFamily: "Gordita",
@@ -105,7 +105,7 @@ class _MainPageState extends State<MainPage> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
-                      hintText: "Search items...",
+                      hintText: "Tìm kiếm sản phẩm ...",
                       border: outlineInputBorder,
                       enabledBorder: outlineInputBorder,
                       focusedBorder: outlineInputBorder,

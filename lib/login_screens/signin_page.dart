@@ -55,7 +55,7 @@ class SignUpScreen extends StatelessWidget {
                               builder: (context) => LogInScreen()));
                     },
                     child: Text(
-                      'Log In',
+                      'Đăng nhập',
                       style: textButton.copyWith(
                         decoration: TextDecoration.underline,
                         decorationThickness: 1,
@@ -96,7 +96,7 @@ class SignUpScreen extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Default()));
                 },
-                child: PrimaryButton(buttonText: 'Sign up'),
+                child: PrimaryButton(buttonText: 'ĐĂNG KÝ  '),
               ),
             ),
             SizedBox(

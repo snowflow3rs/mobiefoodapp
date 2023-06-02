@@ -30,7 +30,7 @@ class _SuccessState extends State<Success> {
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
-                    'Successful !!',
+                    'Đặt món thành công !!',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
@@ -40,9 +40,9 @@ class _SuccessState extends State<Success> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             child: Text(
-              " 'Your payment was done successfully'",
+              " 'Thanh toán của bạn đã được thực hiện thành công'",
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 14),
             ),
           ),
           DefaultButton(

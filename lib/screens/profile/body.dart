@@ -13,27 +13,27 @@ class Body extends StatelessWidget {
           ProfilePic(),
           SizedBox(height: 20),
           ProfileMenu(
-            text: "My Account",
+            text: "Tài khoản",
             icon: "assets/images/user.svg",
             press: () => {},
           ),
           ProfileMenu(
-            text: "Notifications",
+            text: "Thông báo",
             icon: "assets/images/ring.svg",
             press: () {},
           ),
           ProfileMenu(
-            text: "Settings",
+            text: "Cài đặt khác",
             icon: "assets/images/setting.svg",
             press: () {},
           ),
           ProfileMenu(
-            text: "Help Center",
+            text: "Hỗ trợ và tư vấn viên",
             icon: "assets/images/question.svg",
             press: () {},
           ),
           ProfileMenu(
-            text: "Log Out",
+            text: "Đăng xuất",
             icon: "assets/images/log.svg",
             press: () {},
           ),

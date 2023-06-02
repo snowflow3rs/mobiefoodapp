@@ -11,7 +11,7 @@ class PopularProducts extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 5),
-          child: SectionTitle(title: "Popular Products", press: () {}),
+          child: SectionTitle(title: "Ưu đãi đặc biệt", press: () {}),
         ),
         SizedBox(height: 20),
         SingleChildScrollView(

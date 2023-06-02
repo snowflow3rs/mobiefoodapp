@@ -52,7 +52,7 @@ class CheckoutCard extends StatelessWidget {
                     child: SvgPicture.asset("assets/images/receipt.svg"),
                   ),
                   Spacer(),
-                  Text("Add voucher code"),
+                  Text("Thêm mã khuyến mãi"),
                   const SizedBox(width: 10),
                   Icon(
                     Icons.arrow_forward_ios,
@@ -67,7 +67,7 @@ class CheckoutCard extends StatelessWidget {
                 children: [
                   Text.rich(
                     TextSpan(
-                      text: "Total:\n",
+                      text: "Tổng tiền:\n",
                       children: [
                         TextSpan(
                           text: "${controller.total}",
