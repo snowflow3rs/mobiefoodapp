@@ -47,7 +47,7 @@ class IntroPage3 extends StatelessWidget {
                     maxWidth: 234,
                   ),
                   child: Text(
-                    'Freak\nFoodService',
+                    'Iphone\nshopping',
                     style: TextStyle(
                       fontFamily: "Poppins",
                       fontSize: 34,
@@ -80,7 +80,7 @@ class IntroPage3 extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 1.15, 10),
                     child: Text(
-                      'Chọn thức ăn của bạn',
+                      'Liên hệ/Hỗ trợ',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -100,7 +100,7 @@ class IntroPage3 extends StatelessWidget {
                       maxWidth: 350,
                     ),
                     child: Text(
-                      'Dễ dàng tìm thấy loại đồ ăn mà bạn thèm ăn và bạn sẽ được giao hàng tận nơi trong phạm vi rộng.',
+                      'Hộ trợ sản phẩm tốt nhất cho người dùng',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Poppins",

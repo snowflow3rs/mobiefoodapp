@@ -49,7 +49,7 @@ class IntroPage2 extends StatelessWidget {
                     maxWidth: 234,
                   ),
                   child: Text(
-                    'Freak\nFoodService',
+                    'Iphone\nshopping',
                     style: TextStyle(
                       //'Poppins',
                       fontSize: 34,
@@ -83,7 +83,7 @@ class IntroPage2 extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 1.12, 13.54),
                     child: Text(
-                      'Ưu đãi giao hàng ',
+                      'Ưu đãi đặc biệt',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -103,7 +103,7 @@ class IntroPage2 extends StatelessWidget {
                       maxWidth: 348,
                     ),
                     child: Text(
-                      'Giao hàng miễn phí cho khách hàng mới qua Apple Pay và các phương thức thanh toán khác.',
+                      'Hộ trợ cung cấp sản phẩm từ hãng Apple',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         //'Poppins',

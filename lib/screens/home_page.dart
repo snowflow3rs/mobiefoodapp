@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
               ),
               const SizedBox(width: 16 / 2),
               Text(
-                "Vị trí hiện tại của bạn",
+                "Trang chủ",
                 style: TextStyle(
                     fontFamily: "Gordita", fontSize: 18, color: Colors.black),
               ),
@@ -89,7 +89,7 @@ class _MainPageState extends State<MainPage> {
                 height: 5,
               ),
               const Text(
-                "hôm nay bạn đang tìm kiếm món ăn gì ?",
+                "Chào mừng đến với cửa hàng Iphone",
                 style: TextStyle(
                   fontSize: 18,
                   fontFamily: "Gordita",

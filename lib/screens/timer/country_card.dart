@@ -46,7 +46,6 @@ class CountryCard extends StatelessWidget {
                     SvgPicture.asset(
                       iconSrc,
                       width: getProportionateScreenWidth(40),
-                      color: Theme.of(context).accentIconTheme.color,
                     ),
                     Spacer(),
                     Text(
