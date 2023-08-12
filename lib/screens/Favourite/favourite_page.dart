@@ -86,7 +86,6 @@ class FavouritePage extends StatelessWidget {
                           color: Colors.red,
                         ),
                       ),
-                      // Add more details or customize the UI as needed
                     ),
                   ),
                 ),

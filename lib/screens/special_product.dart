@@ -25,19 +25,19 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 image: "assets/images/vege.png",
-                category: "Vegeterian Food",
+                category: "Trải nghiệm",
                 numOfBrands: 18,
                 press: () {},
               ),
               SpecialOfferCard(
                 image: "assets/images/jp.png",
-                category: "Japan Food",
+                category: "Hệ điều hành",
                 numOfBrands: 24,
                 press: () {},
               ),
               SpecialOfferCard(
                 image: "assets/images/des.png",
-                category: "Orthers ",
+                category: "Khác",
                 numOfBrands: 12,
                 press: () {},
               ),
@@ -70,7 +70,7 @@ class SpecialOfferCard extends StatelessWidget {
       child: GestureDetector(
         onTap: press,
         child: SizedBox(
-          width: 242,
+          width: 170,
           height: 100,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
