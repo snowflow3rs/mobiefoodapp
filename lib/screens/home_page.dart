@@ -78,7 +78,7 @@ class _MainPageState extends State<MainPage> {
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
-                "Khám phá ",
+                "Style Step",
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
@@ -89,7 +89,7 @@ class _MainPageState extends State<MainPage> {
                 height: 5,
               ),
               const Text(
-                "Chào mừng đến với cửa hàng Iphone",
+                "Chào mừng đến với cửa hàng của chúng tôi",
                 style: TextStyle(
                   fontSize: 18,
                   fontFamily: "Gordita",

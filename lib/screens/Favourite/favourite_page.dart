@@ -39,7 +39,7 @@ class FavouritePage extends StatelessWidget {
               ),
               const SizedBox(width: 16 / 2),
               Text(
-                "Yêu thích",
+                " Sản phẩm yêu thích",
                 style: TextStyle(color: Colors.black),
               ),
             ],

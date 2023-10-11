@@ -86,7 +86,7 @@ class _SideMenuState extends State<SideMenu> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Saint Laurist",
+                      "Zero To One Group",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -96,7 +96,7 @@ class _SideMenuState extends State<SideMenu> {
                       height: 2,
                     ),
                     Text(
-                      "123 Main Street",
+                      "Đại học FPT Tp. Hồ Chí Minh",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,

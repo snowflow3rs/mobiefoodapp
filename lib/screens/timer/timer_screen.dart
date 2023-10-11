@@ -65,7 +65,7 @@ class _TimeScreenState extends State<TimeScreen> {
           title: const Padding(
             padding: EdgeInsets.only(top: 10, left: 30),
             child: Text(
-              "Chatbot",
+              "Chat box with admin ",
               style: TextStyle(
                   fontFamily: "Gordita", fontSize: 18, color: Colors.black),
             ),

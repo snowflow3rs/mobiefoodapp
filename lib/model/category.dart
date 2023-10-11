@@ -6,19 +6,23 @@ class Category {
 
 List<Category> demo = [
   Category(
-    icon: "assets/images/hamburger.png",
-    title: "Burgers",
+    icon: "assets/images/LS.png",
+    title: "Shoes",
   ),
   Category(
-    icon: "assets/images/pizza.png",
-    title: "Pizza",
+    icon: "assets/images/AC.png",
+    title: "Accessory",
   ),
   Category(
-    icon: "assets/images/soda.png",
-    title: "Drinks",
+    icon: "assets/images/DL.png",
+    title: "Delivery",
   ),
   Category(
-    icon: "assets/images/panna-cotta.png",
-    title: "Others",
+    icon: "assets/images/CS.png",
+    title: "Cleaning Service",
+  ),
+  Category(
+    icon: "assets/images/EX.png",
+    title: "Shoes Exchange",
   ),
 ];

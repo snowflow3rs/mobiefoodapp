@@ -47,7 +47,7 @@ class IntroPage3 extends StatelessWidget {
                     maxWidth: 234,
                   ),
                   child: Text(
-                    'Iphone\nshopping',
+                    'Style Step',
                     style: TextStyle(
                       fontFamily: "Poppins",
                       fontSize: 34,

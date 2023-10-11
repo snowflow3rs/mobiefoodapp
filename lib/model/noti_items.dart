@@ -22,19 +22,19 @@ List<Noti> demoNotis = [
   Noti(
       product: demoProducts[0],
       message: "Thông báo 1",
-      description: " Chào mừng bạn đến với thế giới đồ ăn  ",
-      date: "5/24/2023",
+      description: " Chào mừng bạn đến với cửa hàng ..  ",
+      date: "9/27/2023",
       time: "5 PM"),
   Noti(
       product: demoProducts[1],
       message: "Thông báo 2",
       description: "Sản phẩm mới sắp ra mắt...",
-      date: "5/25/2023",
+      date: "9/27/2023",
       time: "8 AM"),
   Noti(
       product: demoProducts[2],
       message: "Thông báo 3",
       description: "Sự kiện mới sắp ra mắt",
-      date: "5/26/2023",
+      date: "9/27/2023",
       time: "9 AM"),
 ];
